@@ -1,4 +1,5 @@
 package edu.handong.cafe;
+
 import edu.handong.cafe.person.Barister;
 import edu.handong.cafe.person.Cashier;
 
@@ -20,22 +21,27 @@ public class Cafe {
 		this.numberOfSits = 0;
 	}
 	
-	
 	public void showMenu() {
-		
+		System.out.println("You can choose from these");
+		System.out.println("1. Ice-coffee / 2. Hot-coffee / 3. fruit juice / ... ");
 	}
 	public void takeOrder() {
-		cashier.
+		
+		cashier.takeOrder();
 		
 	}
 	public void recieveMoney() {
 		
+		cashier.recieveMoney();
+		
 	}
 	public void makeDrink() {
 		
-	}
-	public void makeBread() {
+		barista.makeDrink("drink menu");
 		
 	}
+	/*public void makeBread() {
+		
+	}*/
 
 }
