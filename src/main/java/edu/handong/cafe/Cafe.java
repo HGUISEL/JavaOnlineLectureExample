@@ -8,10 +8,24 @@ public class Cafe {
 	protected Cashier cashier;
 	protected int numberOfSits;
 	
+	public Cafe(int numberOfSits){
+		this.barista = new Barister();
+		this.cashier = new Cashier();
+		this.numberOfSits = numberOfSits;
+	}
+	
+	public Cafe() {
+		this.barista = new Barister();
+		this.cashier = new Cashier();
+		this.numberOfSits = 0;
+	}
+	
+	
 	public void showMenu() {
 		
 	}
 	public void takeOrder() {
+		cashier.
 		
 	}
 	public void recieveMoney() {
