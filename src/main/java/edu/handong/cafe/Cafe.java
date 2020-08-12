@@ -4,7 +4,7 @@ import edu.handong.cafe.person.Barister;
 import edu.handong.cafe.person.Cashier;
 
 
-public class Cafe {
+public class Cafe implements ICafe{
 	protected Barister barista;
 	protected Cashier cashier;
 	protected int numberOfSits;
