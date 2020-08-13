@@ -85,7 +85,11 @@ public class Main {
 				customer.payMoney();
 				inbreeze.recieveMoney();
 				inbreeze.givePoint();
-				inbreeze.makeDrink(menuNumber); 
+				if(menuNumber < 6) {
+					inbreeze.makeDrink(menuNumber); 
+				}else {
+					inbreeze.cook();
+				}
 				
 				break;
 				

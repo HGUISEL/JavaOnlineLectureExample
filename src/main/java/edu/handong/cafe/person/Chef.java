@@ -11,12 +11,13 @@ public class Chef extends Human{
 	
 	public void cook() {
 		System.out.println("Chef is cooking!");
+		System.out.println("please waiting for a sec ...");
 		try {
 		      Thread.sleep(5000);
 		} catch (InterruptedException e) { 
 			
 		}		
-		System.out.println("Chef : done!!! ");	
+		System.out.println("  Chef : done!!! Here is the drink you ordered~\\n");	
 	}
 	public void washDish() {
 		System.out.println("Chef washes the dish!");	
