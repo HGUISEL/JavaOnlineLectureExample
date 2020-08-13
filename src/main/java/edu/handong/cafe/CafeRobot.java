@@ -3,7 +3,7 @@ package edu.handong.cafe;
 public class CafeRobot extends Cafe implements IUnmannedCafe {
 	
 	public CafeRobot() {
-		System.out.println("Hello, Human. This is Cafe Robot.");
+		System.out.println("\nHello, Human. This is Cafe Robot.");
 	}
 
 	public void takeOrderByMachine() {

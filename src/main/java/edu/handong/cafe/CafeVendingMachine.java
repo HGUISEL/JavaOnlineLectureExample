@@ -7,10 +7,10 @@ public class CafeVendingMachine extends Cafe implements IUnmannedCafe {
 	}
 	
 	public void takeOrderByMachine() {
-		System.out.println("Robot take order from customer.");
+		System.out.println("Machine takes order from customer.");
 	}
 	public void recieveMoneyByMachine() {
-		System.out.println("Robot recieved money from customer.\n");
+		System.out.println("Machine recieved money from customer.\n");
 	}
 	public void handOverDrink(int menuNum) {
 		System.out.println("Here is the drink #" + menuNum + " you ordered!");

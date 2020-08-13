@@ -6,7 +6,7 @@ public class Inbreeze extends Cafe implements IRestaurant {
 	private Chef chef;
 	
 	public Inbreeze() {
-		System.out.println("Welcome to Inbreeze!!!");
+		System.out.println("\nWelcome to Inbreeze!!!");
 		this.chef = new Chef();
 	}
 	
