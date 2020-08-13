@@ -29,28 +29,66 @@ public class Main {
 			case EDIYA:
 				CafeEdiya ediya = new CafeEdiya();
 				
-				ediya.showMenu(); // show menu to customer
-				ediya.takeOrder(); // cashier take order from customer
-				menuNumber = customer.orderMenu(); // customer order menu
-				customer.payMoney(); // customer pay money
-				ediya.recieveMoney(); // cashier receive money from customer
-				ediya.givePoint(); // save cafe ediya point 
-				ediya.makeDrink(menuNumber); // barista make drink
+				ediya.showMenu();  // show menu to customer
+				ediya.takeOrder();  // cashier take order from customer
+				menuNumber = customer.orderMenu();  // customer order menu
+				customer.payMoney();  // customer pay money
+				ediya.recieveMoney();  // cashier receive money from customer
+				ediya.givePoint();  // save cafe Ediya point 
+				ediya.makeDrink(menuNumber);  // barista make drink
 				
 				break;
 				
 			case HISBEANS:
 				CafeHisBeans hisBeans = new CafeHisBeans();
+				
+				hisBeans.showMenu();  
+				hisBeans.takeOrder();
+				menuNumber = customer.orderMenu();
+				customer.payMoney();
+				hisBeans.recieveMoney();
+				hisBeans.givePoint();
+				hisBeans.makeDrink(menuNumber); 
+				
 				break;
+				
 			case ROBOT:
 				CafeRobot robot = new CafeRobot();
+				
+				robot.showMenu();
+				robot.takeOrderByMachine();
+				menuNumber = customer.orderMenu();
+				customer.payMoney();
+				robot.recieveMoneyByMachine();
+				robot.handOverDrink(menuNumber);
+				
 				break;
+				
 			case VENDINGMACHINE:
 				CafeVendingMachine vendingMachine = new CafeVendingMachine();
+				
+				vendingMachine.showMenu();
+				vendingMachine.takeOrderByMachine();
+				menuNumber = customer.orderMenu();
+				customer.payMoney();
+				vendingMachine.recieveMoneyByMachine();
+				vendingMachine.handOverDrink(menuNumber);
+				
 				break;
+				
 			case INBREEZE:
 				Inbreeze inbreeze = new Inbreeze();
+				
+				inbreeze.showMenu();
+				inbreeze.takeOrder();
+				menuNumber = customer.orderMenu();
+				customer.payMoney();
+				inbreeze.recieveMoney();
+				inbreeze.givePoint();
+				inbreeze.makeDrink(menuNumber); 
+				
 				break;
+				
 			default:
 				System.out.println("There is no Cafe !!");
 		}

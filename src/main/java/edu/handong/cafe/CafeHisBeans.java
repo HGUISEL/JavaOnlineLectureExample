@@ -3,8 +3,7 @@ package edu.handong.cafe;
 public class CafeHisBeans extends Cafe {
 	
 	public CafeHisBeans() {
-		super();
-		System.out.println("Welcome!!!");
+		System.out.println("Welcome to HisBeans!!!");
 	}
 	
 	public void givePoint() {

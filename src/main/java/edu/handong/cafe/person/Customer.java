@@ -55,7 +55,7 @@ public class Customer extends Human {
 	}
 	
 	public void payMoney() {
-		System.out.println("Customer pays the money!\n");
+		System.out.println("\nCustomer pays the money!\n");
 	}
 	
 }

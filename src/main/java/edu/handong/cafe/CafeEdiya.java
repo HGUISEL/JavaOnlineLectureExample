@@ -3,7 +3,6 @@ package edu.handong.cafe;
 public class CafeEdiya extends Cafe {
 	
 	public CafeEdiya() {
-		super();
 		System.out.println("Welcome to Ediya!!!");
 	}
 	
