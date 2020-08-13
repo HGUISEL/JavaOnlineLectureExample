@@ -12,11 +12,11 @@ public class Cashier extends Human {
 	
 	public void takeOrder() {
 		System.out.println("Cashier take order from customer. ");
-		System.out.println("Cashier : Do you want to oder?? ");
+		System.out.println("  Cashier : Do you want to order?? ");
 	}
 	public void recieveMoney() {
 		System.out.println("Cashier recieve money from customer. ");
-		System.out.println("Cashier : Thank you for your odering!");
+		System.out.println("  Cashier : Thank you for your odering!\n");
 	}
 	public void giveFinishSignal() {
 		// Vibration bell or Oder Number paper

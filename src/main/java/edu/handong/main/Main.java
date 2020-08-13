@@ -9,6 +9,7 @@ public class Main {
 	public static final int ROBOT = 3;
 	public static final int VENDINGMACHINE = 4;
 	public static final int INBREEZE = 5;
+	public int menuNumber;
 
 	public static void main(String args[]) {
 		Main runner = new Main();
@@ -17,9 +18,9 @@ public class Main {
 	
 	public void run(String args[]) {
 		Customer customer = new Customer();
-		Barister barister;
+		/*Barister barister;
 		Chef chef;
-		Cashier cashier;
+		Cashier cashier;*/
 		
 		showCafeList();
 		int cafeType = customer.chooseCafe();
@@ -27,7 +28,17 @@ public class Main {
 		switch(cafeType) {
 			case EDIYA:
 				CafeEdiya ediya = new CafeEdiya();
+				
+				ediya.showMenu(); // show menu to customer
+				ediya.takeOrder(); // cashier take order from customer
+				menuNumber = customer.orderMenu(); // customer order menu
+				customer.payMoney(); // customer pay money
+				ediya.recieveMoney(); // cashier receive money from customer
+				ediya.givePoint(); // save cafe ediya point 
+				ediya.makeDrink(menuNumber); // barista make drink
+				
 				break;
+				
 			case HISBEANS:
 				CafeHisBeans hisBeans = new CafeHisBeans();
 				break;

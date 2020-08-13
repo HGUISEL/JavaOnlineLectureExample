@@ -10,14 +10,15 @@ public class Barister extends Human {
 		super("unName", 0);
 	}
 	
-	public void makeDrink(String menu) {
-		System.out.println("Barister is making the " + menu);
+	public void makeDrink(int menu) {
+		System.out.println("\nBarister is making the #" + menu + " menu. ");
+		System.out.println("please waiting for a sec ...");
 		try {
 		      Thread.sleep(5000);
 		} catch (InterruptedException e) { 
 			
 		}		
-		System.out.println("Barister : done!!! ");	
+		System.out.println("  Barister : done!!! Here is the drink you ordered~\n");	
 	}
 
 	public void cleanCafe() {

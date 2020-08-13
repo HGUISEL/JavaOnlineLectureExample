@@ -22,8 +22,8 @@ public class Cafe implements ICafe{
 	}
 	
 	public void showMenu() {
-		System.out.println("You can choose from these");
-		System.out.println("1. Ice-coffee / 2. Hot-coffee / 3. fruit juice / ... ");
+		System.out.println("\nYou can choose from these");
+		System.out.println("1. Ice-coffee \n2. Hot-coffee \n3. fruit juice  \n4. Ice-tea \n5. Smoothie\n");
 	}
 	public void takeOrder() {
 		
@@ -35,10 +35,10 @@ public class Cafe implements ICafe{
 		cashier.recieveMoney();
 		
 	}
-	public void makeDrink() {
+	public void makeDrink(int menu) {  
 		
-		barista.makeDrink("drink menu");
+		barista.makeDrink(menu);
 		
-	}
+	} 
 
 }
