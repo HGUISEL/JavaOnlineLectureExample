@@ -20,30 +20,30 @@ public class Main {
 	public static void main(String args[]) {
 		Customer customer = new Customer();
 		Barister barister;
-		Chef chec;
+		Chef chef;
 		Cashier cashier;
 		
 		showCafeList();
 		int cafeType = customer.chooseCafe();
 		
 		switch(cafeType) {
-		case EDIYA:
-			CafeEdiya ediya = new CafeEdiya();
-			break;
-		case HISBEANS:
-			CafeHisBeans hisBeans = new CafeHisBeans();
-			break;
-		case ROBOT:
-			CafeRobot robot = new CafeRobot();
-			break;
-		case VENDINGMACHINE:
-			CafeVendingMachine vendingMachine = new CafeVendingMachine();
-			break;
-		case INBREEZE:
-			Inbreeze inbreeze = new Inbreeze();
-			break;
-		default:
-			System.out.println("There is no Cafe !!");
+			case EDIYA:
+				CafeEdiya ediya = new CafeEdiya();
+				break;
+			case HISBEANS:
+				CafeHisBeans hisBeans = new CafeHisBeans();
+				break;
+			case ROBOT:
+				CafeRobot robot = new CafeRobot();
+				break;
+			case VENDINGMACHINE:
+				CafeVendingMachine vendingMachine = new CafeVendingMachine();
+				break;
+			case INBREEZE:
+				Inbreeze inbreeze = new Inbreeze();
+				break;
+			default:
+				System.out.println("There is no Cafe !!");
 		}
 		
 	}

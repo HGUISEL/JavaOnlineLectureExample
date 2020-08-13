@@ -40,8 +40,5 @@ public class Cafe implements ICafe{
 		barista.makeDrink("drink menu");
 		
 	}
-	/*public void makeBread() {
-		
-	}*/
 
 }
