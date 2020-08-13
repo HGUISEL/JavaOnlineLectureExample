@@ -1,4 +1,5 @@
 package edu.handong.cafe.person;
+
 import java.util.Scanner;
 
 public class Customer extends Human {

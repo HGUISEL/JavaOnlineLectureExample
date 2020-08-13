@@ -1,14 +1,7 @@
 package edu.handong.main;
 
-import edu.handong.cafe.CafeEdiya;
-import edu.handong.cafe.CafeHisBeans;
-import edu.handong.cafe.CafeRobot;
-import edu.handong.cafe.CafeVendingMachine;
-import edu.handong.cafe.Inbreeze;
-import edu.handong.cafe.person.Barister;
-import edu.handong.cafe.person.Cashier;
-import edu.handong.cafe.person.Chef;
-import edu.handong.cafe.person.Customer;
+import edu.handong.cafe.*;
+import edu.handong.cafe.person.*;
 
 public class Main {
 	public static final int EDIYA = 1;
@@ -28,7 +21,7 @@ public class Main {
 		
 		switch(cafeType) {
 			case EDIYA:
-				CafeEdiya ediya = new CafeEdiya();
+				Cafe ediya = new CafeEdiya();
 				break;
 			case HISBEANS:
 				CafeHisBeans hisBeans = new CafeHisBeans();
