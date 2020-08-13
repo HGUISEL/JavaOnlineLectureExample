@@ -11,6 +11,11 @@ public class Main {
 	public static final int INBREEZE = 5;
 
 	public static void main(String args[]) {
+		Main runner = new Main();
+		runner.run(args);
+	}
+	
+	public void run(String args[]) {
 		Customer customer = new Customer();
 		Barister barister;
 		Chef chef;
@@ -21,7 +26,7 @@ public class Main {
 		
 		switch(cafeType) {
 			case EDIYA:
-				Cafe ediya = new CafeEdiya();
+				CafeEdiya ediya = new CafeEdiya();
 				break;
 			case HISBEANS:
 				CafeHisBeans hisBeans = new CafeHisBeans();
