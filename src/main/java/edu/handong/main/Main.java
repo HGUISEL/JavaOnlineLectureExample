@@ -4,12 +4,12 @@ import edu.handong.cafe.*;
 import edu.handong.cafe.person.*;
 
 public class Main {
-	public static final int EDIYA = 1;
-	public static final int HISBEANS = 2;
-	public static final int ROBOT = 3;
-	public static final int VENDINGMACHINE = 4;
-	public static final int INBREEZE = 5;
-	public int menuNumber;
+	private static final int EDIYA = 1;
+	private static final int HISBEANS = 2;
+	private static final int ROBOT = 3;
+	private static final int VENDINGMACHINE = 4;
+	private static final int INBREEZE = 5;
+	private int menuNumber;
 
 	public static void main(String args[]) {
 		Main runner = new Main();
@@ -18,9 +18,6 @@ public class Main {
 	
 	public void run(String args[]) {
 		Customer customer = new Customer();
-		/*Barister barister;
-		Chef chef;
-		Cashier cashier;*/
 		
 		showCafeList();
 		int cafeType = customer.chooseCafe();
