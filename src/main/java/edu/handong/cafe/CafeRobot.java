@@ -7,7 +7,7 @@ public class CafeRobot extends Cafe implements IUnmannedCafe {
 	}
 
 	public void takeOrderByMachine() {
-		System.out.println("Robot take order from customer.");
+		System.out.println("Robot takes order from customer.");
 	}
 	public void recieveMoneyByMachine() {
 		System.out.println("Robot recieved money from customer.\n");

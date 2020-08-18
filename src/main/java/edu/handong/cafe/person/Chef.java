@@ -19,8 +19,5 @@ public class Chef extends Human{
 		}		
 		System.out.println("  Chef : done!!! Here is the drink you ordered~\\n");	
 	}
-	public void washDish() {
-		System.out.println("Chef washes the dish!");	
-	}
 	
 }

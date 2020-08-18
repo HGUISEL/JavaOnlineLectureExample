@@ -21,8 +21,5 @@ public class Barister extends Human {
 		System.out.println("  Barister : done!!! Here is the drink you ordered~\n");	
 	}
 
-	public void cleanCafe() {
-		System.out.println("Barister is cleaning the Cafe");
-	}
 
 }
