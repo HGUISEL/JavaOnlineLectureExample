@@ -15,89 +15,88 @@ public class Main {
 		Main runner = new Main();
 		runner.run(args);
 	}
-	
+
 	public void run(String args[]) {
 		Customer customer = new Customer();
-		
+
 		showCafeList();
 		int cafeType = customer.chooseCafe();
-		
+
 		switch(cafeType) {
-			case EDIYA:
-				CafeEdiya ediya = new CafeEdiya();
-				
-				ediya.showMenu();  // show menu to customer
-				ediya.takeOrder();  // cashier take order from customer
-				menuNumber = customer.orderMenu();  // customer order menu
-				customer.payMoney();  // customer pay money
-				ediya.recieveMoney();  // cashier receive money from customer
-				ediya.givePoint();  // save cafe Ediya point 
-				ediya.makeDrink(menuNumber);  // barista make drink
-				
-				break;
-				
-			case HISBEANS:
-				CafeHisBeans hisBeans = new CafeHisBeans();
-				
-				hisBeans.showMenu();  
-				hisBeans.takeOrder();
-				menuNumber = customer.orderMenu();
-				customer.payMoney();
-				hisBeans.recieveMoney();
-				hisBeans.givePoint();
-				hisBeans.makeDrink(menuNumber); 
-				
-				break;
-				
-			case ROBOT:
-				CafeRobot robot = new CafeRobot();
-				
-				robot.showMenu();
-				robot.takeOrderByMachine();
-				menuNumber = customer.orderMenu();
-				customer.payMoney();
-				robot.recieveMoneyByMachine();
-				robot.handOverDrink(menuNumber);
-				
-				break;
-				
-			case VENDINGMACHINE:
-				CafeVendingMachine vendingMachine = new CafeVendingMachine();
-				
-				vendingMachine.showMenu();
-				vendingMachine.takeOrderByMachine();
-				menuNumber = customer.orderMenu();
-				customer.payMoney();
-				vendingMachine.recieveMoneyByMachine();
-				vendingMachine.handOverDrink(menuNumber);
-				
-				break;
-				
-			case INBREEZE:
-				Inbreeze inbreeze = new Inbreeze();
-				
-				inbreeze.showMenu();
-				inbreeze.takeOrder();
-				menuNumber = customer.orderMenu();
-				customer.payMoney();
-				inbreeze.recieveMoney();
-				inbreeze.givePoint();
-				if(menuNumber < 6) {
-					inbreeze.makeDrink(menuNumber); 
-				}else {
-					inbreeze.cook();
-				}
-				
-				break;
-				
-			default:
-				System.out.println("There is no Cafe !!");
+		case EDIYA:
+			CafeEdiya ediya = new CafeEdiya();
+
+			ediya.showMenu();  // show menu to customer
+			ediya.takeOrder();  // cashier take order from customer
+			menuNumber = customer.orderMenu();  // customer order menu
+			customer.payMoney();  // customer pay money
+			ediya.recieveMoney();  // cashier receive money from customer
+			ediya.givePoint();  // save cafe Ediya point 
+			ediya.makeDrink(menuNumber);  // barista make drink
+
+			break;
+
+		case HISBEANS:
+			CafeHisBeans hisBeans = new CafeHisBeans();
+
+			hisBeans.showMenu();  
+			hisBeans.takeOrder();
+			menuNumber = customer.orderMenu();
+			customer.payMoney();
+			hisBeans.recieveMoney();
+			hisBeans.givePoint();
+			hisBeans.makeDrink(menuNumber); 
+
+			break;
+
+		case ROBOT:
+			CafeRobot robot = new CafeRobot();
+
+			robot.showMenu();
+			robot.takeOrderByMachine();
+			menuNumber = customer.orderMenu();
+			customer.payMoney();
+			robot.recieveMoneyByMachine();
+			robot.handOverDrink(menuNumber);
+
+			break;
+
+		case VENDINGMACHINE:
+			CafeVendingMachine vendingMachine = new CafeVendingMachine();
+
+			vendingMachine.showMenu();
+			vendingMachine.takeOrderByMachine();
+			menuNumber = customer.orderMenu();
+			customer.payMoney();
+			vendingMachine.recieveMoneyByMachine();
+			vendingMachine.handOverDrink(menuNumber);
+
+			break;
+
+		case INBREEZE:
+			Inbreeze inbreeze = new Inbreeze();
+
+			inbreeze.showMenu();
+			inbreeze.takeOrder();
+			menuNumber = customer.orderMenu();
+			customer.payMoney();
+			inbreeze.recieveMoney();
+			inbreeze.givePoint();
+			if(menuNumber < 6) {
+				inbreeze.makeDrink(menuNumber); 
+			}else {
+				inbreeze.cook();
+			}
+
+			break;
+
+		default:
+			System.out.println("There is no Cafe !!");
 		}
-		
+
 	}
-	
-	
-	 public static void showCafeList() {
+
+	public static void showCafeList() {
 		System.out.println("\n^0^ Cafe List ^0^");
 		System.out.println("1. Ediya");
 		System.out.println("2. HisBeans");

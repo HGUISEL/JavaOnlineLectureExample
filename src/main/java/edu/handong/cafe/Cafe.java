@@ -9,8 +9,8 @@ public class Cafe implements ICafe{
 	protected int numberOfSits;
 	
 	public Cafe(int numberOfSits){
-		this.barista = new Barister();
-		this.cashier = new Cashier();
+		barista = new Barister();
+		cashier = new Cashier();
 		this.numberOfSits = numberOfSits;
 	}
 	
