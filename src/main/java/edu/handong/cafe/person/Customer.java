@@ -33,6 +33,7 @@ public class Customer extends Human {
 	
 	public int chooseCafe() {
 		System.out.print("Enter Cafe Name that you want go :  ");
+		
 		int cafeType;
 		
 		try {

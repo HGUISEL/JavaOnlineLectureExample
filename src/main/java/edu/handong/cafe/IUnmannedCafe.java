@@ -6,5 +6,4 @@ public interface IUnmannedCafe {
 	public void recieveMoneyByMachine();
 	public void handOverDrink(int menuNum);
 	
-	
 }

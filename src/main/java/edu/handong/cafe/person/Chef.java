@@ -12,6 +12,7 @@ public class Chef extends Human{
 	public void cook() {
 		System.out.println("Chef is cooking!");
 		System.out.println("please waiting for a sec ...");
+		
 		try {
 		      Thread.sleep(5000);
 		} catch (InterruptedException e) { 

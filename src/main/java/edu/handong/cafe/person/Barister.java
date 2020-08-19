@@ -13,13 +13,14 @@ public class Barister extends Human {
 	public void makeDrink(int menu) {
 		System.out.println("\nBarister is making the #" + menu + " menu. ");
 		System.out.println("please waiting for a sec ...");
+		
 		try {
 		      Thread.sleep(5000);
 		} catch (InterruptedException e) { 
 			
 		}		
+		
 		System.out.println("  Barister : done!!! Here is the drink you ordered~\n");	
 	}
-
 
 }

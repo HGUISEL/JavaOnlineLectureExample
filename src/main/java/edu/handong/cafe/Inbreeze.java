@@ -13,9 +13,11 @@ public class Inbreeze extends Cafe implements IRestaurant {
 	public void givePoint() {
 		System.out.println("Points for Inbreeze have been accumulated.");
 	}
+	
 	public void handOverFood() {
 		System.out.println("This is the food you ordered!");
 	}
+	
 	public void showMenu() {
 		super.showMenu();
 		System.out.println("Restaurant Menu");
@@ -24,8 +26,8 @@ public class Inbreeze extends Cafe implements IRestaurant {
 		System.out.println("8. Cream risotto");
 		System.out.println("9. Tomato risotto");
 		System.out.println("10. Salad\n");
-		
 	}
+	
 	public void cook() {
 		chef.cook();
 	}
